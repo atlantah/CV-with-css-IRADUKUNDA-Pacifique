@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRADUKUNDA Pacifique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #a485c6, #d6b8ff);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 5px solid white;
+        }
+        h1 {
+            font-size: 22px;
+            font-style: normal;
+            margin: 10px 0;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: normal;
+            color: gray;
+        }
+        .call-btn {
+            display: inline-block;
+            background: #a485c6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .bio, .instruction {
+            font-size: 14px;
+            color: gray;
+            padding: 0 10px;
+        }
+        h4 {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-style: normal;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons i {
+            font-size: 20px;
+            color: gray;
+            cursor: pointer;
+        }
+        .education {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
+            <h1>IRADUKUNDA PACIFIQUE</h1>
+            <h3>Software Engineer, UI/UX Designer and Web Developer in Rwanda</h3>
+            <a href="tel:+250798047579" class="call-btn" onclick="confirmCall(event)">
+                <i class="fas fa-phone-alt"></i> Call +250 798 047 579
+            </a>
+
+            <p class="bio">I am a software engineer, web developer, and network engineer currently living in Rwanda. My interests range from technology to programming. I am also interested in web development and digital design.</p>
+            <p class="instruction">You can click the button above to call me.</p>
+
+            <h4>EDUCATION</h4>
+            <p class="education">Tumba College of Technology</p>
+            <p class="education">Hope School</p>
+
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        function confirmCall(event) {
+            const confirmAction = confirm("Do you want to call Pacifique?");
+            if (!confirmAction) {
+                event.preventDefault(); 
+            }
+        }
+    </script>
+</body>
+</html>
